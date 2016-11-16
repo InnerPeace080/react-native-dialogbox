@@ -246,7 +246,7 @@ export default class DialogBox extends Component{
 
 	_renderContent() {
 		return (
-			<View style={styles.tipBoxView}>
+			<View style={[styles.tipBoxView,this.props.tipBoxView]}>
 				{this.state.content}
 			</View>
 		);
